@@ -397,10 +397,10 @@ export pretrain_model_path=/path/to/your/swin_L_384_22k
 ```
 export EDPOSE_COCO_PATH=/path/to/your/cocodir
 export Inference_Path=/path/to/your/inference_dir
-  python -m torch.distributed.launch --nproc_per_node=4  main.py \
+  python -m torch.distributed.launch --nproc_per_node=1  main.py \
  --output_dir "logs/coco_r50" \
  -c config/edpose.cfg.py \
- --options batch_size=4 epochs=60 lr_drop=55 num_body_points=17 backbone='resnet50' \
+ --options batch_size=1 epochs=60 lr_drop=55 num_body_points=17 backbone='resnet50' \
  --dataset_file="coco" \
  --pretrain_model_path "./models/edpose_r50_coco.pth" \
  --eval
@@ -414,10 +414,10 @@ export Inference_Path=/path/to/your/inference_dir
 ```
 export EDPOSE_COCO_PATH=/path/to/your/cocodir
 export Inference_Path=/path/to/your/inference_dir
-  python -m torch.distributed.launch --nproc_per_node=4 main.py \
+  python -m torch.distributed.launch --nproc_per_node=1 main.py \
  --output_dir "logs/coco_swinl" \
  -c config/edpose.cfg.py \
- --options batch_size=4 epochs=60 lr_drop=55 num_body_points=17 backbone='swin_L_384_22k' \
+ --options batch_size=1 epochs=60 lr_drop=55 num_body_points=17 backbone='swin_L_384_22k' \
  --dataset_file="coco" \
  --pretrain_model_path "./models/edpose_swinl_coco.pth" \
  --eval
@@ -431,10 +431,10 @@ export Inference_Path=/path/to/your/inference_dir
 ```
 export EDPOSE_COCO_PATH=/path/to/your/cocodir
 export Inference_Path=/path/to/your/inference_dir
-  python -m torch.distributed.launch --nproc_per_node=4 main.py \
+  python -m torch.distributed.launch --nproc_per_node=1 main.py \
  --output_dir "logs/coco_swinl" \
  -c config/edpose.cfg.py \
- --options batch_size=4 epochs=60 lr_drop=55 num_body_points=17 backbone='swin_L_384_22k' \
+ --options batch_size=1 epochs=60 lr_drop=55 num_body_points=17 backbone='swin_L_384_22k' \
   return_interm_indices=0,1,2,3 num_feature_levels=5 \
  --dataset_file="coco" \
  --pretrain_model_path "./models/edpose_swinl_5scale_coco.pth" \
