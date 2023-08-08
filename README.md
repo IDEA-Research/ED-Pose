@@ -3,7 +3,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/explicit-box-detection-unifies-end-to-end/2d-human-pose-estimation-on-human-art)](https://paperswithcode.com/sota/2d-human-pose-estimation-on-human-art?p=explicit-box-detection-unifies-end-to-end)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/explicit-box-detection-unifies-end-to-end/multi-person-pose-estimation-on-crowdpose)](https://paperswithcode.com/sota/multi-person-pose-estimation-on-crowdpose?p=explicit-box-detection-unifies-end-to-end)
  
-<img src="figs/crowd scene.gif" style="height:250px" /> <img src="figs/fast_speed.gif" style="height:250px" />
+<img src="figs/crowd scene.gif" style="height:200px" /> <img src="figs/fast_speed.gif" style="height:200px" />
 
 This is the official pytorch implementation of our ICLR 2023 paper ["Explicit Box Detection Unifies End-to-End Multi-Person Pose Estimation "](https://arxiv.org/pdf/2302.01593.pdf). 
 
